@@ -1,0 +1,35 @@
+{
+  "generated_by": "AI/tools/export_model.py",
+  "model_id": "qrdetec-url-xgb",
+  "n_features": 81,
+  "warning": "vendored code - regenerate with the exporter, never edit by hand",
+  "files": {
+    "url_normalizer.py": {
+      "source": "AI/src/preprocessing/url_normalizer.py",
+      "source_sha256": "bb4d3a9f6a64781c597902023ce662642dd52c0e6a0c155174060fcc1882d0f6",
+      "vendored_sha256": "bb4d3a9f6a64781c597902023ce662642dd52c0e6a0c155174060fcc1882d0f6",
+      "import_rewrites": []
+    },
+    "vietnamese_threats.py": {
+      "source": "AI/src/intelligence/vietnamese_threats.py",
+      "source_sha256": "88ccaa8efa0ede4c9064e95f0ff96cf3a330d59d44f45857bba87f276b73e6f3",
+      "vendored_sha256": "88ccaa8efa0ede4c9064e95f0ff96cf3a330d59d44f45857bba87f276b73e6f3",
+      "import_rewrites": []
+    },
+    "url_feature_extractor.py": {
+      "source": "AI/src/features/url_feature_extractor.py",
+      "source_sha256": "36234eefe09c1d85106dfbcbfe1e7763cd7bffb3b4c1d75fed7032efd785fb8d",
+      "vendored_sha256": "e1ced74409462b6480c5034d148a921301c4c69e79cf7c08ac9c55ebf6f77ae2",
+      "import_rewrites": [
+        [
+          "from src.preprocessing.url_normalizer import (",
+          "from .url_normalizer import ("
+        ],
+        [
+          "from src.intelligence.vietnamese_threats import (",
+          "from .vietnamese_threats import ("
+        ]
+      ]
+    }
+  }
+}

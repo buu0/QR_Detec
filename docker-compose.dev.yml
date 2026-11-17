@@ -1,0 +1,16 @@
+# Local development override (plain http on localhost, live code reload of backend/app).
+# Usage: docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d
+# NEVER use this file in production.
+services:
+  api-gateway:
+    environment:
+      - ENVIRONMENT=development
+      - SESSION_COOKIE_SECURE=false
+      - CORS_ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000,http://localhost,http://127.0.0.1
+    volumes:
+      - ./backend/app:/app/app:ro
+  processing-worker:
+    environment:
+      - ENVIRONMENT=development
+    volumes:
+      - ./backend/app:/app/app:ro

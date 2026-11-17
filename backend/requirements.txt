@@ -1,0 +1,40 @@
+# === API Gateway ===
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.18
+pydantic==2.10.3
+
+# === Task Queue ===
+celery[redis]==5.4.0
+# Pin kombu: unpinned resolution picked kombu 5.7 which requires redis-py>=6.1 and crash-looped the worker
+kombu==5.4.2
+redis==5.2.1
+
+# === PDF Processing ===
+PyMuPDF==1.24.13
+
+# === QR Decoding ===
+opencv-contrib-python-headless==4.10.0.84
+pyzbar==0.1.9
+
+# === OCR Engine (PaddleOCR - fastest for Vietnamese) ===
+paddlepaddle==3.0.0
+paddleocr==2.9.1
+
+# === String Matching ===
+rapidfuzz==3.10.1
+unidecode==1.3.8
+
+pydantic-settings==2.6.1
+
+# === Utilities ===
+python-dotenv==1.0.1
+aiofiles==24.1.0
+httpx==0.27.2
+Pillow==11.0.0
+numpy==1.26.4
+xgboost>=2.0.0,<=3.2.0
+# Used directly by the vendored URL feature extractor (app/services/url_security/url_model_runtime).
+# Feature parity with training is enforced at model load time by the bundle's golden vectors.
+idna>=3.7
+tldextract>=5.1.2,<=5.4.0

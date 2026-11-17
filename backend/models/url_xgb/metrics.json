@@ -1,0 +1,821 @@
+{
+  "val_diagnostics": {
+    "split": "val_diagnostics",
+    "n_samples": 13397,
+    "n_pos": 6135,
+    "n_neg": 7262,
+    "threshold": 0.597483,
+    "tp": 5192,
+    "fp": 310,
+    "tn": 6952,
+    "fn": 943,
+    "accuracy": 0.906472,
+    "precision": 0.943657,
+    "precision_ci95": [
+      0.9372,
+      0.9494
+    ],
+    "recall": 0.846292,
+    "recall_ci95": [
+      0.8371,
+      0.8551
+    ],
+    "f1": 0.892326,
+    "fpr": 0.042688,
+    "fpr_ci95": [
+      0.0383,
+      0.0476
+    ],
+    "roc_auc": 0.960827,
+    "pr_auc": 0.96026,
+    "brier_score": 0.070452,
+    "ece": 0.010837,
+    "alerts_per_1000": 410.7,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 3702,
+        "bin_acc": 0.0267,
+        "bin_conf": 0.0222
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2635,
+        "bin_acc": 0.1241,
+        "bin_conf": 0.135
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 411,
+        "bin_acc": 0.2214,
+        "bin_conf": 0.2665
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 764,
+        "bin_acc": 0.3141,
+        "bin_conf": 0.3333
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 169,
+        "bin_acc": 0.4675,
+        "bin_conf": 0.436
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 214,
+        "bin_acc": 0.5,
+        "bin_conf": 0.5787
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 441,
+        "bin_acc": 0.6281,
+        "bin_conf": 0.6682
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 265,
+        "bin_acc": 0.7849,
+        "bin_conf": 0.7527
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 293,
+        "bin_acc": 0.8601,
+        "bin_conf": 0.8722
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 4503,
+        "bin_acc": 0.9893,
+        "bin_conf": 0.9861
+      }
+    ],
+    "infer_time_sec": 0.141,
+    "latency_ms_per_sample": 0.0105
+  },
+  "calib_diagnostics": {
+    "split": "calib_diagnostics",
+    "n_samples": 9174,
+    "n_pos": 3896,
+    "n_neg": 5278,
+    "threshold": 0.597483,
+    "tp": 3165,
+    "fp": 204,
+    "tn": 5074,
+    "fn": 731,
+    "accuracy": 0.898082,
+    "precision": 0.939448,
+    "precision_ci95": [
+      0.9309,
+      0.947
+    ],
+    "recall": 0.812372,
+    "recall_ci95": [
+      0.7998,
+      0.8243
+    ],
+    "f1": 0.871301,
+    "fpr": 0.038651,
+    "fpr_ci95": [
+      0.0338,
+      0.0442
+    ],
+    "roc_auc": 0.956677,
+    "pr_auc": 0.949286,
+    "brier_score": 0.075052,
+    "ece": 0.0,
+    "alerts_per_1000": 367.2,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 2816,
+        "bin_acc": 0.0234,
+        "bin_conf": 0.0234
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 1836,
+        "bin_acc": 0.1351,
+        "bin_conf": 0.1351
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 285,
+        "bin_acc": 0.2667,
+        "bin_conf": 0.2667
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 572,
+        "bin_acc": 0.3339,
+        "bin_conf": 0.3339
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 149,
+        "bin_acc": 0.4362,
+        "bin_conf": 0.4362
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 147,
+        "bin_acc": 0.5782,
+        "bin_conf": 0.5782
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 281,
+        "bin_acc": 0.669,
+        "bin_conf": 0.669
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 175,
+        "bin_acc": 0.7543,
+        "bin_conf": 0.7543
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 188,
+        "bin_acc": 0.8723,
+        "bin_conf": 0.8723
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 2725,
+        "bin_acc": 0.9839,
+        "bin_conf": 0.9839
+      }
+    ],
+    "infer_time_sec": 0.1156,
+    "latency_ms_per_sample": 0.0126
+  },
+  "internal_test": {
+    "split": "internal_test",
+    "n_samples": 14492,
+    "n_pos": 5579,
+    "n_neg": 8913,
+    "threshold": 0.597483,
+    "tp": 4508,
+    "fp": 298,
+    "tn": 8615,
+    "fn": 1071,
+    "accuracy": 0.905534,
+    "precision": 0.937994,
+    "precision_ci95": [
+      0.9308,
+      0.9445
+    ],
+    "recall": 0.80803,
+    "recall_ci95": [
+      0.7975,
+      0.8182
+    ],
+    "f1": 0.868175,
+    "fpr": 0.033434,
+    "fpr_ci95": [
+      0.0299,
+      0.0374
+    ],
+    "roc_auc": 0.959804,
+    "pr_auc": 0.946051,
+    "brier_score": 0.070333,
+    "ece": 0.004641,
+    "alerts_per_1000": 331.6,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 5293,
+        "bin_acc": 0.0215,
+        "bin_conf": 0.0219
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2726,
+        "bin_acc": 0.1354,
+        "bin_conf": 0.1349
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 420,
+        "bin_acc": 0.2262,
+        "bin_conf": 0.2668
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 863,
+        "bin_acc": 0.3384,
+        "bin_conf": 0.3336
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 173,
+        "bin_acc": 0.5087,
+        "bin_conf": 0.4362
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 211,
+        "bin_acc": 0.5355,
+        "bin_conf": 0.5759
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 434,
+        "bin_acc": 0.6682,
+        "bin_conf": 0.6736
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 260,
+        "bin_acc": 0.7577,
+        "bin_conf": 0.7531
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 313,
+        "bin_acc": 0.9169,
+        "bin_conf": 0.8729
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 3799,
+        "bin_acc": 0.9829,
+        "bin_conf": 0.9842
+      }
+    ],
+    "infer_time_sec": 0.1689,
+    "latency_ms_per_sample": 0.0117
+  },
+  "internal_test_max_f1": {
+    "split": "internal_test_max_f1",
+    "n_samples": 14492,
+    "n_pos": 5579,
+    "n_neg": 8913,
+    "threshold": 0.34369636968810957,
+    "tp": 4733,
+    "fp": 503,
+    "tn": 8410,
+    "fn": 846,
+    "accuracy": 0.906914,
+    "precision": 0.903934,
+    "precision_ci95": [
+      0.8957,
+      0.9116
+    ],
+    "recall": 0.84836,
+    "recall_ci95": [
+      0.8387,
+      0.8575
+    ],
+    "f1": 0.875266,
+    "fpr": 0.056434,
+    "fpr_ci95": [
+      0.0518,
+      0.0614
+    ],
+    "roc_auc": 0.959804,
+    "pr_auc": 0.946051,
+    "brier_score": 0.070333,
+    "ece": 0.004641,
+    "alerts_per_1000": 361.3,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 5293,
+        "bin_acc": 0.0215,
+        "bin_conf": 0.0219
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2726,
+        "bin_acc": 0.1354,
+        "bin_conf": 0.1349
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 420,
+        "bin_acc": 0.2262,
+        "bin_conf": 0.2668
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 863,
+        "bin_acc": 0.3384,
+        "bin_conf": 0.3336
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 173,
+        "bin_acc": 0.5087,
+        "bin_conf": 0.4362
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 211,
+        "bin_acc": 0.5355,
+        "bin_conf": 0.5759
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 434,
+        "bin_acc": 0.6682,
+        "bin_conf": 0.6736
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 260,
+        "bin_acc": 0.7577,
+        "bin_conf": 0.7531
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 313,
+        "bin_acc": 0.9169,
+        "bin_conf": 0.8729
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 3799,
+        "bin_acc": 0.9829,
+        "bin_conf": 0.9842
+      }
+    ],
+    "infer_time_sec": 0.1689,
+    "latency_ms_per_sample": 0.0117
+  },
+  "internal_test_high_recall": {
+    "split": "internal_test_high_recall",
+    "n_samples": 14492,
+    "n_pos": 5579,
+    "n_neg": 8913,
+    "threshold": 0.5974827089643113,
+    "tp": 4508,
+    "fp": 298,
+    "tn": 8615,
+    "fn": 1071,
+    "accuracy": 0.905534,
+    "precision": 0.937994,
+    "precision_ci95": [
+      0.9308,
+      0.9445
+    ],
+    "recall": 0.80803,
+    "recall_ci95": [
+      0.7975,
+      0.8182
+    ],
+    "f1": 0.868175,
+    "fpr": 0.033434,
+    "fpr_ci95": [
+      0.0299,
+      0.0374
+    ],
+    "roc_auc": 0.959804,
+    "pr_auc": 0.946051,
+    "brier_score": 0.070333,
+    "ece": 0.004641,
+    "alerts_per_1000": 331.6,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 5293,
+        "bin_acc": 0.0215,
+        "bin_conf": 0.0219
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2726,
+        "bin_acc": 0.1354,
+        "bin_conf": 0.1349
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 420,
+        "bin_acc": 0.2262,
+        "bin_conf": 0.2668
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 863,
+        "bin_acc": 0.3384,
+        "bin_conf": 0.3336
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 173,
+        "bin_acc": 0.5087,
+        "bin_conf": 0.4362
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 211,
+        "bin_acc": 0.5355,
+        "bin_conf": 0.5759
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 434,
+        "bin_acc": 0.6682,
+        "bin_conf": 0.6736
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 260,
+        "bin_acc": 0.7577,
+        "bin_conf": 0.7531
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 313,
+        "bin_acc": 0.9169,
+        "bin_conf": 0.8729
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 3799,
+        "bin_acc": 0.9829,
+        "bin_conf": 0.9842
+      }
+    ],
+    "infer_time_sec": 0.1689,
+    "latency_ms_per_sample": 0.0117
+  },
+  "internal_test_calibrated_05": {
+    "split": "internal_test_calibrated_05",
+    "n_samples": 14492,
+    "n_pos": 5579,
+    "n_neg": 8913,
+    "threshold": 0.5,
+    "tp": 4621,
+    "fp": 396,
+    "tn": 8517,
+    "fn": 958,
+    "accuracy": 0.906569,
+    "precision": 0.921068,
+    "precision_ci95": [
+      0.9133,
+      0.9282
+    ],
+    "recall": 0.828285,
+    "recall_ci95": [
+      0.8182,
+      0.838
+    ],
+    "f1": 0.872216,
+    "fpr": 0.044429,
+    "fpr_ci95": [
+      0.0403,
+      0.0489
+    ],
+    "roc_auc": 0.959804,
+    "pr_auc": 0.946051,
+    "brier_score": 0.070333,
+    "ece": 0.004641,
+    "alerts_per_1000": 346.2,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 5293,
+        "bin_acc": 0.0215,
+        "bin_conf": 0.0219
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2726,
+        "bin_acc": 0.1354,
+        "bin_conf": 0.1349
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 420,
+        "bin_acc": 0.2262,
+        "bin_conf": 0.2668
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 863,
+        "bin_acc": 0.3384,
+        "bin_conf": 0.3336
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 173,
+        "bin_acc": 0.5087,
+        "bin_conf": 0.4362
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 211,
+        "bin_acc": 0.5355,
+        "bin_conf": 0.5759
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 434,
+        "bin_acc": 0.6682,
+        "bin_conf": 0.6736
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 260,
+        "bin_acc": 0.7577,
+        "bin_conf": 0.7531
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 313,
+        "bin_acc": 0.9169,
+        "bin_conf": 0.8729
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 3799,
+        "bin_acc": 0.9829,
+        "bin_conf": 0.9842
+      }
+    ],
+    "infer_time_sec": 0.1689,
+    "latency_ms_per_sample": 0.0117
+  },
+  "internal_test_raw_05": {
+    "split": "internal_test_raw_05",
+    "n_samples": 14492,
+    "n_pos": 5579,
+    "n_neg": 8913,
+    "threshold": 0.5,
+    "tp": 4674,
+    "fp": 443,
+    "tn": 8470,
+    "fn": 905,
+    "accuracy": 0.906983,
+    "precision": 0.913426,
+    "precision_ci95": [
+      0.9054,
+      0.9208
+    ],
+    "recall": 0.837785,
+    "recall_ci95": [
+      0.8279,
+      0.8472
+    ],
+    "f1": 0.873972,
+    "fpr": 0.049703,
+    "fpr_ci95": [
+      0.0454,
+      0.0544
+    ],
+    "roc_auc": 0.960052,
+    "pr_auc": 0.951389,
+    "brier_score": 0.070162,
+    "ece": 0.009883,
+    "alerts_per_1000": 353.1,
+    "reliability_diagram": [
+      {
+        "bin_idx": 0,
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 5320,
+        "bin_acc": 0.0218,
+        "bin_conf": 0.0241
+      },
+      {
+        "bin_idx": 1,
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 2419,
+        "bin_acc": 0.1327,
+        "bin_conf": 0.1445
+      },
+      {
+        "bin_idx": 2,
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 731,
+        "bin_acc": 0.2025,
+        "bin_conf": 0.2423
+      },
+      {
+        "bin_idx": 3,
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 514,
+        "bin_acc": 0.3054,
+        "bin_conf": 0.3465
+      },
+      {
+        "bin_idx": 4,
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 391,
+        "bin_acc": 0.4169,
+        "bin_conf": 0.4473
+      },
+      {
+        "bin_idx": 5,
+        "lo": 0.5,
+        "hi": 0.6000000000000001,
+        "count": 286,
+        "bin_acc": 0.528,
+        "bin_conf": 0.5499
+      },
+      {
+        "bin_idx": 6,
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 342,
+        "bin_acc": 0.6462,
+        "bin_conf": 0.6558
+      },
+      {
+        "bin_idx": 7,
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 350,
+        "bin_acc": 0.7457,
+        "bin_conf": 0.7485
+      },
+      {
+        "bin_idx": 8,
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 412,
+        "bin_acc": 0.9005,
+        "bin_conf": 0.8513
+      },
+      {
+        "bin_idx": 9,
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 3727,
+        "bin_acc": 0.9847,
+        "bin_conf": 0.9873
+      }
+    ],
+    "infer_time_sec": 0.1689,
+    "latency_ms_per_sample": 0.0117
+  }
+}

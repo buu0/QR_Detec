@@ -1,0 +1,12 @@
+# TEMPLATE ONLY — do not put real passwords here.
+# Generate the real file with:  python scripts/generate_secrets.py
+# (writes redis/users.acl with a SHA-256 password hash, and secrets/redis_url; both git-ignored)
+#
+# - default user disabled: unauthenticated connections are refused
+# - qrguard: application user (API + worker + Celery). Dangerous/admin commands are denied
+#   (FLUSHALL, FLUSHDB, CONFIG, DEBUG, KEYS, SHUTDOWN, MONITOR, ACL, ...). INFO is re-allowed.
+# - "#<sha256>" stores only the hash of the password, never the plaintext.
+# - Key scope is "~*" because Celery/kombu create keys with dynamic names (e.g. pidbox reply
+#   queues prefixed by a UUID). Narrowing it is possible but must be validated against Celery first.
+user default off
+user qrguard on #REPLACE_WITH_SHA256_OF_PASSWORD ~* &* +@all -@dangerous +info

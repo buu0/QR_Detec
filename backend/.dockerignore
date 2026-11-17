@@ -1,0 +1,30 @@
+# Never ship secrets, VCS metadata, caches, test artifacts or user uploads in the image.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+.git/
+.gitignore
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+tests/
+storage/
+spool/
+logs/
+*.log
+.venv/
+venv/
+.vscode/
+.idea/
+Dockerfile
+.dockerignore
+# Local training artefacts (import the model via models/url_xgb/import_model.py instead)
+models/url_xgb/*.pkl
+models/url_xgb/*.joblib

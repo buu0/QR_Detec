@@ -1,0 +1,77 @@
+{
+  "selection_rule": "maximise validation recall subject to validation FPR <= 0.05 (calibrated scores)",
+  "operating_point_a": {
+    "name": "Point A: Maximize Recall s.t. FPR <= 0.05",
+    "constraint": "FPR <= 0.05",
+    "threshold": 0.5974827089643113,
+    "recall": 0.8464547677261614,
+    "fpr": 0.04268796474800331,
+    "precision": 0.9436670906778121,
+    "f1": 0.8924213782436845,
+    "recall_ci95": [
+      0.8372,
+      0.8553
+    ],
+    "fpr_ci95": [
+      0.0383,
+      0.0476
+    ],
+    "precision_ci95": [
+      0.9373,
+      0.9495
+    ],
+    "tp": 5193,
+    "fp": 310,
+    "tn": 6952,
+    "fn": 942,
+    "n_samples": 13397
+  },
+  "operating_point_b": {
+    "name": "Point B: Minimize FPR s.t. Recall >= 0.90",
+    "constraint": "Recall >= 0.90",
+    "threshold": 0.33265307545661926,
+    "recall": 0.9154034229828851,
+    "fpr": 0.1416965023409529,
+    "precision": 0.8451467268623025,
+    "f1": 0.8788732394366198,
+    "recall_ci95": [
+      0.9082,
+      0.9221
+    ],
+    "fpr_ci95": [
+      0.1339,
+      0.1499
+    ],
+    "precision_ci95": [
+      0.8362,
+      0.8536
+    ],
+    "tp": 5616,
+    "fp": 1029,
+    "tn": 6233,
+    "fn": 519,
+    "n_samples": 13397
+  },
+  "high_recall_low_fpr": {
+    "threshold": 0.5974827089643113,
+    "recall": 0.8464547677261614,
+    "fpr": 0.04268796474800331,
+    "f1": 0.8924213782436845,
+    "precision": 0.9436670906778121
+  },
+  "max_f1": {
+    "threshold": 0.34369636968810957,
+    "recall": 0.8792176039119804,
+    "fpr": 0.07201872762324428,
+    "f1": 0.8951211417192168,
+    "precision": 0.9116106134865641
+  },
+  "target_recall_95": {
+    "threshold": 0.12982456386089325,
+    "recall": 0.9696821515892421,
+    "fpr": 0.42839438171302674,
+    "f1": 0.7830207305034551,
+    "precision": 0.6566225165562913
+  },
+  "operating_threshold": 0.597483
+}

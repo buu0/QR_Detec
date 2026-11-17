@@ -1,0 +1,5 @@
+{
+  "n_features": 81,
+  "normalizer_module": "src.preprocessing.url_normalizer",
+  "feature_extractor_module": "src.features.url_feature_extractor"
+}

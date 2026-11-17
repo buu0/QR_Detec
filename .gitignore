@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production builds
+dist/
+*/dist/
+dist-ssr/
+*.local
+
+# Python cache and environments
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Generated secrets (scripts/generate_secrets.py)
+secrets/
+redis/users.acl
+*.pem
+*.key
+
+# Generated threat-intelligence feed (scripts/build_ioc_feed.py) — third-party data, never commit
+ti_feed/*
+!ti_feed/README.md
+
+# Logs and storage
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+storage/
+*/storage/
+spool/
+*/spool/
+AI/reports/url_tests/
+
+# Editor, IDE, and AI Agent skills
+.agents/
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test caches and coverage
+.pytest_cache/
+*/.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# Distribution archives and local thesis manuscript
+QRDetec_CLEAN_*.zip
+THESIS_INTEGRATED_BODY.md
+
+
+# Local phone demo tools and runtime artifacts (local testing only)
+CHAY_DEMO_DIEN_THOAI.bat
+MA_QR_DIEN_THOAI.png
+scripts/cloudflared.exe
+scripts/launch_phone_demo.py

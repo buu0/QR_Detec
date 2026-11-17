@@ -1,0 +1,10 @@
+storage/
+spool/
+*.pyc
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+*.log
+.DS_Store
+
